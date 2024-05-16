@@ -1,13 +1,3 @@
-# gpt
-将github.com/sashabaranov/go-openai封装为Goner提供给Gone框架使用
-
-
-
-## 使用和编写示例
-1. 在配置文件中，写入配置项，参考[通过内置Goners支持配置文件](https://goner.fun/zh/guide/config.html)
-2. 在需要使用的结构体中注入ChatGPT并调用相关接口，代码示例如下：
-
-```go
 package example
 
 import (
@@ -43,4 +33,3 @@ func (c *Chat) Use(ask string) error {
 	println(response.Choices[0].Message.Content)
 	return nil
 }
-```
